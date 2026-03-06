@@ -1,0 +1,516 @@
+{
+  "categories": [
+    {
+      "name": "Referral Request",
+      "slug": "referral-request",
+      "description": "Ask for referrals from satisfied clients. Best after giving first.",
+      "industry": "universal",
+      "whenToSend": "30-90 days into relationship",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Timed delay or manual after relationship established",
+      "phase": "GET",
+      "notes": "Works best AFTER at least one 'give' card. Never as first touch.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Business Development",
+      "sortOrder": 0
+    },
+    {
+      "name": "Still Here / Re-engagement",
+      "slug": "still-here",
+      "description": "Reconnect with clients who have gone quiet or leads that went cold.",
+      "industry": "universal",
+      "whenToSend": "90-180 days of no contact",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Triggered by inactivity period or manual selection",
+      "phase": "GET",
+      "notes": "Tone should be warm, not desperate. 'Just checking in' not 'why haven't you called.'",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Business Development",
+      "sortOrder": 1
+    },
+    {
+      "name": "Apology / Service Recovery",
+      "slug": "apology",
+      "description": "Acknowledge a mistake or service issue. Rebuild trust.",
+      "industry": "universal",
+      "whenToSend": "Within 24-48 hours of issue resolution",
+      "automationType": "Manual",
+      "triggerTiming": "Manual. After service issue is resolved.",
+      "phase": "GIVE",
+      "notes": "Powerful because almost nobody does this. Turns detractors into advocates.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Client Care",
+      "sortOrder": 0
+    },
+    {
+      "name": "Holiday / Seasonal",
+      "slug": "holiday",
+      "description": "Warm holiday wishes. Thanksgiving, New Year, or seasonal greeting.",
+      "industry": "universal",
+      "whenToSend": "1-2 weeks before holiday",
+      "automationType": "Automated",
+      "triggerTiming": "Calendar-based: Thanksgiving, New Year, etc.",
+      "phase": "GIVE",
+      "notes": "Avoid religious-specific unless you know the client. Thanksgiving and New Year are safest.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "General",
+      "sortOrder": 0
+    },
+    {
+      "name": "Sympathy / Thinking of You",
+      "slug": "sympathy",
+      "description": "Acknowledge difficult times: loss, illness, hardship. Pure empathy.",
+      "industry": "universal",
+      "whenToSend": "Within a week of learning about situation",
+      "automationType": "Manual",
+      "triggerTiming": "Manual only. Requires awareness and sensitivity.",
+      "phase": "GIVE",
+      "notes": "No business content whatsoever. Just human compassion. Very memorable.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "General",
+      "sortOrder": 1
+    },
+    {
+      "name": "Check-In / How's Everything",
+      "slug": "check-in",
+      "description": "Simple touchpoint between major interactions. Keeps you top of mind.",
+      "industry": "universal",
+      "whenToSend": "Quarterly or at natural intervals",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Timed quarterly schedule or manual",
+      "phase": "GIVE",
+      "notes": "Not a sales pitch. Genuine 'how are things going' with your contact info.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "General",
+      "sortOrder": 2
+    },
+    {
+      "name": "Event Invitation",
+      "slug": "event-invitation",
+      "description": "Invite to webinar, seminar, appreciation event, or community event.",
+      "industry": "universal",
+      "whenToSend": "2-3 weeks before event",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Manual selection or event-triggered automation",
+      "phase": "GIVE",
+      "notes": "Works well for client appreciation events, educational seminars.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "General",
+      "sortOrder": 3
+    },
+    {
+      "name": "Just Because / Thinking of You",
+      "slug": "just-because",
+      "description": "No occasion needed. Just reaching out to stay connected.",
+      "industry": "universal",
+      "whenToSend": "Random / quarterly rotation",
+      "automationType": "Manual",
+      "triggerTiming": "Manual. Best triggered by seeing something that reminds you of them.",
+      "phase": "GIVE",
+      "notes": "The rarest and most impactful. 'Saw this and thought of you' energy.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "General",
+      "sortOrder": 4
+    },
+    {
+      "name": "Birthday",
+      "slug": "birthday",
+      "description": "Personal birthday greeting. No business content. Just human connection.",
+      "industry": "universal",
+      "whenToSend": "10-14 days before birthday (arrives on time)",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by client birthday field in CRM",
+      "phase": "GIVE",
+      "notes": "Keep it simple. No sales ask. No business mention. Just 'Happy Birthday.'",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Milestones",
+      "sortOrder": 0
+    },
+    {
+      "name": "Anniversary",
+      "slug": "anniversary",
+      "description": "Celebrate the anniversary of becoming your client.",
+      "industry": "universal",
+      "whenToSend": "On or near the anniversary date",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by client start date, annually",
+      "phase": "GIVE",
+      "notes": "Works across all industries. '1 year ago you trusted me with X. Thank you.'",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Milestones",
+      "sortOrder": 1
+    },
+    {
+      "name": "Welcome / New Client",
+      "slug": "welcome",
+      "description": "Warm welcome after they become a client. Sets the tone for the relationship.",
+      "industry": "universal",
+      "whenToSend": "1-5 days after becoming a client",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by new client record creation",
+      "phase": "GIVE",
+      "notes": "Pair with Thank You or make this THE thank you. Don't send both separately.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Onboarding",
+      "sortOrder": 0
+    },
+    {
+      "name": "Thank You",
+      "slug": "thank-you",
+      "description": "General gratitude after a transaction, meeting, or interaction. The foundation card.",
+      "industry": "universal",
+      "whenToSend": "Within 3 days of transaction or meeting",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by new client/policy/closing event",
+      "phase": "GIVE",
+      "notes": "Core card. Every industry uses this. Should be the first card in any sequence.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Relationship Building",
+      "sortOrder": 0
+    },
+    {
+      "name": "Referral Thank You",
+      "slug": "referral-thank-you",
+      "description": "Thank someone who referred a new client to you. Reinforces referral behavior.",
+      "industry": "universal",
+      "whenToSend": "Within 48 hours of receiving referral",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Triggered by referral source field or manual",
+      "phase": "GIVE",
+      "notes": "Critical for referral-based businesses. 2-3x more referrals from same person after.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Relationship Building",
+      "sortOrder": 1
+    },
+    {
+      "name": "Congratulations",
+      "slug": "congratulations",
+      "description": "Celebrate a client's personal milestone: promotion, new baby, achievement.",
+      "industry": "universal",
+      "whenToSend": "Within a week of learning about event",
+      "automationType": "Manual",
+      "triggerTiming": "Manual. Requires awareness of client life events.",
+      "phase": "GIVE",
+      "notes": "Social media monitoring is the trigger. Very high impact because it shows you pay attention.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Relationship Building",
+      "sortOrder": 2
+    },
+    {
+      "name": "Review / Testimonial Request",
+      "slug": "review-request",
+      "description": "Gentle ask for an online review after positive experience.",
+      "industry": "universal",
+      "whenToSend": "2-4 weeks after successful transaction",
+      "automationType": "Automated",
+      "triggerTiming": "Timed delay after transaction close date",
+      "phase": "GET",
+      "notes": "Include specific review link not in the content, only on the back of the card as QR code (Google, Zillow, etc). Only send to happy clients.",
+      "sourceSheet": "Universal Categories",
+      "subcategory": "Retention",
+      "sortOrder": 0
+    }
+  ],
+  "templates": [
+    {
+      "name": "Referral Request - Template 1",
+      "content": "If you ever come across someone who could use what I do, I'd love an introduction. I promise I'll treat anyone you send my way the same way I treated you.",
+      "industry": "universal",
+      "categorySlugs": [
+        "referral-request"
+      ],
+      "toneStyle": "Soft / trust-based",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Referral Request - Template 2",
+      "content": "The best clients I get come from people like you. If you know anyone who might benefit from working with me, please think of me. I'd really appreciate it.",
+      "industry": "universal",
+      "categorySlugs": [
+        "referral-request"
+      ],
+      "toneStyle": "Complimentary / gentle ask",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Still Here / Re-engagement - Template 1",
+      "content": "Hey, it's been a while and I just wanted to check in. Hope everything's going well. I'm still here if you ever need anything.",
+      "industry": "universal",
+      "categorySlugs": [
+        "still-here"
+      ],
+      "toneStyle": "Casual / no pressure",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Still Here / Re-engagement - Template 2",
+      "content": "Realized it's been some time since we've talked. Wanted to reach out and say I'm still thinking of you and still here to help if the need ever comes up.",
+      "industry": "universal",
+      "categorySlugs": [
+        "still-here"
+      ],
+      "toneStyle": "Warm / low-key",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Apology / Service Recovery - Template 1",
+      "content": "I just want to say I'm sorry. What happened wasn't acceptable and I know it. I'm committed to making it right and earning your trust back.",
+      "industry": "universal",
+      "categorySlugs": [
+        "apology"
+      ],
+      "toneStyle": "Direct / accountable",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Apology / Service Recovery - Template 2",
+      "content": "I've been thinking about this and I owe you a real apology. I dropped the ball and you deserved better. I'm sorry.",
+      "industry": "universal",
+      "categorySlugs": [
+        "apology"
+      ],
+      "toneStyle": "Personal / honest",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Holiday / Seasonal - Template 1",
+      "content": "Wishing you and your family a wonderful holiday season. Hope you get some real time to rest and enjoy the people around you.",
+      "industry": "universal",
+      "categorySlugs": [
+        "holiday"
+      ],
+      "toneStyle": "Warm / family-focused",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Holiday / Seasonal - Template 2",
+      "content": "As this year wraps up, I just wanted to say it's been a pleasure knowing you. Wishing you a great holiday and an even better new year.",
+      "industry": "universal",
+      "categorySlugs": [
+        "holiday"
+      ],
+      "toneStyle": "Reflective / warm",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Sympathy / Thinking of You - Template 1",
+      "content": "I heard what you're going through and I just want you to know I'm thinking of you. There's nothing I can say to make it easier, but I'm here.",
+      "industry": "universal",
+      "categorySlugs": [
+        "sympathy"
+      ],
+      "toneStyle": "Raw / personal",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Sympathy / Thinking of You - Template 2",
+      "content": "No words feel right at a time like this. Just wanted you to know you're in my thoughts and I'm here if you need anything at all.",
+      "industry": "universal",
+      "categorySlugs": [
+        "sympathy"
+      ],
+      "toneStyle": "Quiet / sincere",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Check-In / How's Everything - Template 1",
+      "content": "Just checking in to see how things are going. No agenda, just wanted to say hello and make sure everything's good on your end.",
+      "industry": "universal",
+      "categorySlugs": [
+        "check-in"
+      ],
+      "toneStyle": "Casual / genuine",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Check-In / How's Everything - Template 2",
+      "content": "Hey, been thinking about you lately. Hope life is treating you well. Reach out anytime, I'm always happy to chat.",
+      "industry": "universal",
+      "categorySlugs": [
+        "check-in"
+      ],
+      "toneStyle": "Warm / friendly",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Event Invitation - Template 1",
+      "content": "I'd love to have you join us for an upcoming event. It's a great chance to connect in person and I think you'd enjoy it. Details inside.",
+      "industry": "universal",
+      "categorySlugs": [
+        "event-invitation"
+      ],
+      "toneStyle": "Warm / casual",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Event Invitation - Template 2",
+      "content": "I'm putting together something I think you'll find genuinely useful and I'd really like you to be there. Hope you can make it.",
+      "industry": "universal",
+      "categorySlugs": [
+        "event-invitation"
+      ],
+      "toneStyle": "Personal / inviting",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Just Because / Thinking of You - Template 1",
+      "content": "No real reason for this note, just thought about you today and figured I'd say hello. Hope everything's going great.",
+      "industry": "universal",
+      "categorySlugs": [
+        "just-because"
+      ],
+      "toneStyle": "Super casual / spontaneous",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Just Because / Thinking of You - Template 2",
+      "content": "Saw something the other day that reminded me of you. Figured that was as good a reason as any to reach out. Hope you're doing well.",
+      "industry": "universal",
+      "categorySlugs": [
+        "just-because"
+      ],
+      "toneStyle": "Relatable / personal",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Birthday - Template 1",
+      "content": "Happy Birthday! Hope your day is a good one. Thinking of you today.",
+      "industry": "universal",
+      "categorySlugs": [
+        "birthday"
+      ],
+      "toneStyle": "Super casual",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Birthday - Template 2",
+      "content": "Just wanted to say Happy Birthday and hope you have a fantastic day. You deserve it.",
+      "industry": "universal",
+      "categorySlugs": [
+        "birthday"
+      ],
+      "toneStyle": "Warm / simple",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Anniversary - Template 1",
+      "content": "Can you believe it's already been a year? Wanted to mark the occasion and say thank you for sticking with me. It means a lot.",
+      "industry": "universal",
+      "categorySlugs": [
+        "anniversary"
+      ],
+      "toneStyle": "Casual / grateful",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Anniversary - Template 2",
+      "content": "One year ago you put your trust in me and I haven't taken that lightly. Thank you. Looking forward to many more.",
+      "industry": "universal",
+      "categorySlugs": [
+        "anniversary"
+      ],
+      "toneStyle": "Reflective / sincere",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Welcome / New Client - Template 1",
+      "content": "So glad to have you on board. Looking forward to working together and making sure you have everything you need.",
+      "industry": "universal",
+      "categorySlugs": [
+        "welcome"
+      ],
+      "toneStyle": "Warm / reassuring",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Welcome / New Client - Template 2",
+      "content": "Welcome! Really excited to work with you. Please don't hesitate to reach out anytime you have questions.",
+      "industry": "universal",
+      "categorySlugs": [
+        "welcome"
+      ],
+      "toneStyle": "Friendly / open",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Thank You - Template 1",
+      "content": "Wanted to take a second to say thank you. Genuinely appreciate you trusting me with this.",
+      "industry": "universal",
+      "categorySlugs": [
+        "thank-you"
+      ],
+      "toneStyle": "Warm / sincere",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Thank You - Template 2",
+      "content": "Just a quick note to say thanks. Working with you was a pleasure and I don't take that for granted.",
+      "industry": "universal",
+      "categorySlugs": [
+        "thank-you"
+      ],
+      "toneStyle": "Casual / brief",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Referral Thank You - Template 1",
+      "content": "Heard you sent someone my way and I just want to say thank you. That means everything to me. I'll take great care of them.",
+      "industry": "universal",
+      "categorySlugs": [
+        "referral-thank-you"
+      ],
+      "toneStyle": "Heartfelt / personal",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Referral Thank You - Template 2",
+      "content": "Thank you so much for the referral. The fact that you thought of me says a lot. I won't let them down.",
+      "industry": "universal",
+      "categorySlugs": [
+        "referral-thank-you"
+      ],
+      "toneStyle": "Grateful / committed",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Congratulations - Template 1",
+      "content": "Just heard the news and had to write to say congratulations. That's a big deal and you deserve to celebrate it.",
+      "industry": "universal",
+      "categorySlugs": [
+        "congratulations"
+      ],
+      "toneStyle": "Enthusiastic / personal",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Congratulations - Template 2",
+      "content": "Saw what you've been up to and wanted to say congrats. Really proud of you. You've worked hard for this.",
+      "industry": "universal",
+      "categorySlugs": [
+        "congratulations"
+      ],
+      "toneStyle": "Warm / proud",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Review / Testimonial Request - Template 1",
+      "content": "If our experience working together was worth it, I'd love it if you'd leave me a quick Google review. It helps more than you know and takes about two minutes.",
+      "industry": "universal",
+      "categorySlugs": [
+        "review-request"
+      ],
+      "toneStyle": "Soft ask / practical",
+      "sourceSheet": "Universal Templates"
+    },
+    {
+      "name": "Review / Testimonial Request - Template 2",
+      "content": "Quick note to say it was a pleasure working with you. If you have a minute, an online review would go a long way for me. No pressure at all, just grateful either way.",
+      "industry": "universal",
+      "categorySlugs": [
+        "review-request"
+      ],
+      "toneStyle": "Gentle / no pressure",
+      "sourceSheet": "Universal Templates"
+    }
+  ]
+}

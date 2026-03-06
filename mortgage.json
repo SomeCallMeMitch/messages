@@ -1,0 +1,482 @@
+{
+  "categories": [
+    {
+      "name": "Refinance Opportunity",
+      "slug": "mort-refi",
+      "description": "Notify existing clients when rates drop enough to benefit them.",
+      "industry": "mortgage",
+      "whenToSend": "When rates drop 0.5%+ below their current rate",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Rate monitoring trigger or manual when market shifts",
+      "phase": "GET",
+      "notes": "Be specific: 'Rates dropped to X%. At your current balance, this could save you $Y/month.'",
+      "sourceSheet": "Mortgage",
+      "subcategory": "Business Development",
+      "sortOrder": 0
+    },
+    {
+      "name": "Loan Funded / Closing",
+      "slug": "mort-loan-funded",
+      "description": "Congratulations on closing. Thank for choosing you as their lender.",
+      "industry": "mortgage",
+      "whenToSend": "1-3 days after loan funds",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by loan funding date",
+      "phase": "GIVE",
+      "notes": "Start of the retention journey. This person will refi or buy again in 5-7 years.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "General",
+      "sortOrder": 0
+    },
+    {
+      "name": "Under Contract Milestone",
+      "slug": "mort-under-contract",
+      "description": "Acknowledge when your borrower goes under contract. 'We're on our way.'",
+      "industry": "mortgage",
+      "whenToSend": "Within 2 days of contract execution",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Triggered by loan status change or manual",
+      "phase": "GIVE",
+      "notes": "Keeps borrower feeling supported during the process.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "General",
+      "sortOrder": 1
+    },
+    {
+      "name": "Clear to Close",
+      "slug": "mort-clear-to-close",
+      "description": "Celebrate clear-to-close milestone. Almost at the finish line.",
+      "industry": "mortgage",
+      "whenToSend": "Day of or day after CTC",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Triggered by clear-to-close status in LOS or manual",
+      "phase": "GIVE",
+      "notes": "High excitement moment. 'You're almost a homeowner! See you at the closing table.'",
+      "sourceSheet": "Mortgage",
+      "subcategory": "General",
+      "sortOrder": 2
+    },
+    {
+      "name": "First-Time Homebuyer Special",
+      "slug": "mort-ftb",
+      "description": "Extra-warm congratulations for first-time buyers. Milestone acknowledgment.",
+      "industry": "mortgage",
+      "whenToSend": "At closing or 1-3 days after",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Triggered by first-time buyer flag in LOS or manual",
+      "phase": "GIVE",
+      "notes": "Higher emotional impact than standard closing card. 'Your first home! What a milestone.'",
+      "sourceSheet": "Mortgage",
+      "subcategory": "General",
+      "sortOrder": 3
+    },
+    {
+      "name": "Realtor Co-Marketing Touch",
+      "slug": "mort-realtor-comarket",
+      "description": "Quarterly touch to your realtor partners. Keep the referral pipeline warm.",
+      "industry": "mortgage",
+      "whenToSend": "Quarterly",
+      "automationType": "Automated",
+      "triggerTiming": "Quarterly calendar trigger",
+      "phase": "GIVE",
+      "notes": "Maintain the relationship between transactions. Share market updates, rate snapshots.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "General",
+      "sortOrder": 4
+    },
+    {
+      "name": "Application Received",
+      "slug": "mort-app-received",
+      "description": "Acknowledge receiving their application. Set expectations for next steps.",
+      "industry": "mortgage",
+      "whenToSend": "1-2 days after application submission",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by new application in LOS",
+      "phase": "GIVE",
+      "notes": "Most LOs just email. A handwritten note after applying? They'll remember you forever.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "General",
+      "sortOrder": 5
+    },
+    {
+      "name": "Lost Deal / Didn't Close",
+      "slug": "mort-lost-deal",
+      "description": "Graceful note when a borrower goes with another lender. Leave the door open.",
+      "industry": "mortgage",
+      "whenToSend": "1-2 weeks after losing the deal",
+      "automationType": "Manual",
+      "triggerTiming": "Manual. After learning deal went elsewhere.",
+      "phase": "GIVE",
+      "notes": "No guilt. 'I understand. If your situation changes, I'm here.' They may come back for the next one.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "General",
+      "sortOrder": 6
+    },
+    {
+      "name": "Loan Anniversary",
+      "slug": "mort-loan-anniversary",
+      "description": "Celebrate the anniversary of their mortgage. Stay top of mind for refi/referral.",
+      "industry": "mortgage",
+      "whenToSend": "On loan closing anniversary date",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by closing date, annually",
+      "phase": "GIVE",
+      "notes": "Natural refi conversation starter. 'Happy anniversary! Rates have changed, want to chat?'",
+      "sourceSheet": "Mortgage",
+      "subcategory": "Milestones",
+      "sortOrder": 0
+    },
+    {
+      "name": "Home Purchase Anniversary",
+      "slug": "mort-home-anniversary",
+      "description": "Celebrate the anniversary of their home purchase (same as RE but from LO perspective).",
+      "industry": "mortgage",
+      "whenToSend": "Annually on closing date",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by closing date, annually",
+      "phase": "GIVE",
+      "notes": "Different messaging than loan anniversary. This is about the HOME, not the mortgage.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "Milestones",
+      "sortOrder": 1
+    },
+    {
+      "name": "Rate Lock Confirmation",
+      "slug": "mort-rate-lock",
+      "description": "Celebrate the rate lock. Reassure during a stressful process.",
+      "industry": "mortgage",
+      "whenToSend": "Day of or day after rate lock",
+      "automationType": "Manual + Auto",
+      "triggerTiming": "Triggered by rate lock event in LOS or manual",
+      "phase": "GIVE",
+      "notes": "Reduces anxiety. 'Your rate is locked. One less thing to worry about.'",
+      "sourceSheet": "Mortgage",
+      "subcategory": "Process Updates",
+      "sortOrder": 0
+    },
+    {
+      "name": "Conditional Approval Follow-Up",
+      "slug": "mort-conditional",
+      "description": "Reassurance card during conditional approval. Address the 'waiting' anxiety.",
+      "industry": "mortgage",
+      "whenToSend": "2-3 days after conditional approval",
+      "automationType": "Manual",
+      "triggerTiming": "Manual. After conditions are communicated.",
+      "phase": "GIVE",
+      "notes": "Borrowers stress about conditions. This card says 'everything is normal, we've got this.'",
+      "sourceSheet": "Mortgage",
+      "subcategory": "Process Updates",
+      "sortOrder": 1
+    },
+    {
+      "name": "Pre-Approval Congratulations",
+      "slug": "mort-pre-approval",
+      "description": "Congratulate on pre-approval. Excitement card to start the home search.",
+      "industry": "mortgage",
+      "whenToSend": "1-2 days after pre-approval issued",
+      "automationType": "Automated",
+      "triggerTiming": "Triggered by pre-approval letter generation",
+      "phase": "GIVE",
+      "notes": "Sets you apart from the dozen other LOs who just email the letter.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "Relationship Building",
+      "sortOrder": 0
+    },
+    {
+      "name": "Realtor Partner Thank You",
+      "slug": "mort-realtor-partner",
+      "description": "Thank real estate agents who refer clients to you.",
+      "industry": "mortgage",
+      "whenToSend": "Within 48 hours of receiving referral from agent",
+      "automationType": "Manual",
+      "triggerTiming": "Manual. After each agent referral.",
+      "phase": "GIVE",
+      "notes": "Critical relationship. Realtors are your pipeline. Make them feel valued.",
+      "sourceSheet": "Mortgage",
+      "subcategory": "Relationship Building",
+      "sortOrder": 1
+    }
+  ],
+  "templates": [
+    {
+      "name": "Refinance Opportunity - Template 1",
+      "content": "Wanted to reach out personally because rates have shifted in a way that could actually benefit you. I ran your numbers and I think it's worth a quick conversation. No commitment needed.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-refi"
+      ],
+      "toneStyle": "Personal / data-driven",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Refinance Opportunity - Template 2",
+      "content": "I don't reach out unless I think there's a real reason to and right now there is. Rates have dropped and depending on your balance, you could save real money each month. Call me when you have five minutes.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-refi"
+      ],
+      "toneStyle": "Direct / respectful",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Loan Funded / Closing - Template 1",
+      "content": "Your loan is funded and you are officially a homeowner. I just want to say it was an honor to be your lender through this process. Congratulations!",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-loan-funded"
+      ],
+      "toneStyle": "Celebratory / sincere",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Loan Funded / Closing - Template 2",
+      "content": "Funded! That's the word I love saying most. Congratulations on your new home. Thank you for trusting me to be part of this milestone.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-loan-funded"
+      ],
+      "toneStyle": "Brief / joyful",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Under Contract Milestone - Template 1",
+      "content": "Under contract! This is such a great moment and you should feel good about where we are. I'll be right here making sure everything on the lending side goes smoothly from here to closing.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-under-contract"
+      ],
+      "toneStyle": "Energetic / reassuring",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Under Contract Milestone - Template 2",
+      "content": "Big milestone today. You're under contract and the finish line is in sight. Thank you for your patience through the process so far. Let's close this out strong.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-under-contract"
+      ],
+      "toneStyle": "Warm / committed",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Clear to Close - Template 1",
+      "content": "Clear to close! That's the message you've been waiting for and I'm thrilled to deliver it. You are days away from owning your home. Almost there!",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-clear-to-close"
+      ],
+      "toneStyle": "Excited / celebratory",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Clear to Close - Template 2",
+      "content": "We're clear to close and I just had to write this down because an email felt too ordinary for such great news. You did it. Closing day is just around the corner.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-clear-to-close"
+      ],
+      "toneStyle": "Personal / meaningful",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "First-Time Homebuyer Special - Template 1",
+      "content": "First home ever. That's not a small thing. I hope you know how big a deal this is and how proud you should feel. Congratulations from the bottom of my heart.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-ftb"
+      ],
+      "toneStyle": "Heartfelt / celebratory",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "First-Time Homebuyer Special - Template 2",
+      "content": "Buying your first home is one of the biggest milestones of your life and I was lucky enough to be part of it. Thank you for trusting me. I hope it's everything you dreamed.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-ftb"
+      ],
+      "toneStyle": "Grateful / personal",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Realtor Co-Marketing Touch - Template 1",
+      "content": "Just wanted to check in and say hello. The market's been moving fast and I've got some things I'm seeing that might be useful for you. Would love to connect soon.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-realtor-comarket"
+      ],
+      "toneStyle": "Informative / relationship",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Realtor Co-Marketing Touch - Template 2",
+      "content": "Thinking of you and wanted to stay in touch. I know we're both busy but the best partnerships are the ones we invest in. Happy to grab coffee when timing works.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-realtor-comarket"
+      ],
+      "toneStyle": "Personal / warm",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Application Received - Template 1",
+      "content": "Got your application and I'm already on it. Thank you for taking that step. I know applying for a mortgage feels like a big deal and I want you to know you're in great hands.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-app-received"
+      ],
+      "toneStyle": "Reassuring / immediate",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Application Received - Template 2",
+      "content": "Just wanted to confirm I received your application and say thank you. This is an exciting step and I'm going to work hard to make the rest of the process as smooth as possible.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-app-received"
+      ],
+      "toneStyle": "Professional / warm",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Lost Deal / Didn't Close - Template 1",
+      "content": "I heard you went another direction and I completely understand. I just wanted to write and say no hard feelings at all. If things ever change, I'd be honored to work with you.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-lost-deal"
+      ],
+      "toneStyle": "Gracious / genuine",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Lost Deal / Didn't Close - Template 2",
+      "content": "Not every deal ends up where we hope and that's okay. I wanted to reach out and say I appreciate the time we spent together and I hope everything works out great for you.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-lost-deal"
+      ],
+      "toneStyle": "Warm / no agenda",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Loan Anniversary - Template 1",
+      "content": "It's been a year since we closed your loan and I've been thinking about you. Hope homeownership has been treating you well. I'm still here if you ever have questions.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-loan-anniversary"
+      ],
+      "toneStyle": "Warm / open",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Loan Anniversary - Template 2",
+      "content": "Happy loan anniversary! A year ago you made a big decision and I hope it's paid off in every way. Reach out anytime.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-loan-anniversary"
+      ],
+      "toneStyle": "Casual / celebratory",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Home Purchase Anniversary - Template 1",
+      "content": "One year in your home and I've been thinking about you. Hope it's been everything you imagined. You made a great decision and I'm glad I got to help make it happen.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-home-anniversary"
+      ],
+      "toneStyle": "Warm / reflective",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Home Purchase Anniversary - Template 2",
+      "content": "Happy home anniversary! A year ago today you made one of the biggest decisions of your life. I hope it keeps paying off in every way.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-home-anniversary"
+      ],
+      "toneStyle": "Celebratory / genuine",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Rate Lock Confirmation - Template 1",
+      "content": "Your rate is locked and one big piece of this process is officially off the table. You can breathe a little easier. I've got the rest from here.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-rate-lock"
+      ],
+      "toneStyle": "Reassuring / confident",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Rate Lock Confirmation - Template 2",
+      "content": "Just wanted to confirm your rate lock in writing. You made a great decision at a good time. Now let's carry this home to closing.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-rate-lock"
+      ],
+      "toneStyle": "Professional / forward",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Conditional Approval Follow-Up - Template 1",
+      "content": "I know waiting on conditions can feel uncertain but I want to reassure you that this is completely normal. We're in good shape and I'm working through everything on my end. Hang tight.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-conditional"
+      ],
+      "toneStyle": "Calm / reassuring",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Conditional Approval Follow-Up - Template 2",
+      "content": "Conditional approvals feel scarier than they are. I've closed hundreds of loans just like yours. Trust the process and trust me. We're going to get there.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-conditional"
+      ],
+      "toneStyle": "Expert / confident",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Pre-Approval Congratulations - Template 1",
+      "content": "Congratulations on your pre-approval! This is the first real step toward homeownership and you should feel good about it. Let's go find your home.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-pre-approval"
+      ],
+      "toneStyle": "Motivating / warm",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Pre-Approval Congratulations - Template 2",
+      "content": "You're pre-approved! I know that might seem like just paperwork but it's really the starting gun on an exciting process. I'm pumped to help you find the right place.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-pre-approval"
+      ],
+      "toneStyle": "Enthusiastic / personal",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Realtor Partner Thank You - Template 1",
+      "content": "Thank you for sending your client my way. I know you have options and it means a lot that you chose me. I'm going to take excellent care of them and of your reputation.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-realtor-partner"
+      ],
+      "toneStyle": "Committed / respectful",
+      "sourceSheet": "Mortgage Templates"
+    },
+    {
+      "name": "Realtor Partner Thank You - Template 2",
+      "content": "Referrals from great agents like you are how I grow. Thank you. I'll make sure your client has a smooth experience from application to closing.",
+      "industry": "mortgage",
+      "categorySlugs": [
+        "mort-realtor-partner"
+      ],
+      "toneStyle": "Grateful / professional",
+      "sourceSheet": "Mortgage Templates"
+    }
+  ]
+}
