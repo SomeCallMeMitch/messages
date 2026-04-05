@@ -114,7 +114,7 @@
     },
     {
       "name": "Loan Anniversary",
-      "slug": "mort-loan-anniversary",
+      "slug": "mortgage-anniversary",
       "description": "Celebrate the anniversary of their mortgage. Stay top of mind for refi/referral.",
       "industry": "mortgage",
       "whenToSend": "On loan closing anniversary date",
@@ -363,7 +363,7 @@
       "content": "It's been a year since we closed your loan and I've been thinking about you. Hope homeownership has been treating you well. I'm still here if you ever have questions.",
       "industry": "mortgage",
       "categorySlugs": [
-        "mort-loan-anniversary"
+        "mortgage-anniversary"
       ],
       "toneStyle": "Warm / open",
       "sourceSheet": "Mortgage Templates"
@@ -373,7 +373,7 @@
       "content": "Happy loan anniversary! A year ago you made a big decision and I hope it's paid off in every way. Reach out anytime.",
       "industry": "mortgage",
       "categorySlugs": [
-        "mort-loan-anniversary"
+        "mortgage-anniversary"
       ],
       "toneStyle": "Casual / celebratory",
       "sourceSheet": "Mortgage Templates"
